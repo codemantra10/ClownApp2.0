@@ -1,52 +1,26 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Intro p5.js</title>
+  <title>Realtime Filter Webapp </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-  <style type="text/css">
-  h3
-  {
-    font-size: 25px !important;
-    font-family: cursive;
-  }
-  canvas {
-  	border:1px solid black;
-  }
-  h2{
-  font-family: cursive;
-  color: black;
-  }
-  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
 </head>
 
 <body>
-  <center>
-<div class="container">
-	<h3 class="btn btn-primary">!Birthday App!</h3>
-	<hr>
-  <input id="color"placeholder="Input color of filter:">
-  <input id="textofkindness"placeholder="Insert Kind Text Here">
-  <br>
-  <br>
-  <br>
-  <button onclick="change_color()" class="btn btn-warning" style="width: 120px;">Apply Filter</button>
-  <br>
-  <br>
-
-  <button onclick="take_snapshot()" class="btn btn-success">Take Snapshot</button>
-  <h2 id="text">Happy Birthday!</h2>
-  <h3 id="kind_words"></h3>
-</div>
-</center>
+<h1 id="title">RealTime Filter App!</h1>
+<button onclick="snapshot()" id="s">Take Snapshot</button>
 <script src="main.js"></script>
 </body>
 
 </html>
+
 
