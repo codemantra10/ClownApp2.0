@@ -1,3 +1,4 @@
+
 noseX="";
 noseY="";
 function preload(){
@@ -14,6 +15,8 @@ posenet.on("pose",gotPoses);
 }
 function draw(){
 image(video,0,0,400,400);
+fill(255,0,0);
+circle(noseX, noseY, 20);
 }
 function snapshot(){
 save("clown_image");
